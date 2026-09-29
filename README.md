@@ -74,22 +74,6 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## 🔑 Environment Variables (`backend/.env`)
-
-```env
-PORT=5000
-# Replace <db_password> with your MongoDB Atlas database user password:
-MONGODB_URI=mongodb://jkamlesh131106_db_user:<db_password>@ac-nofu3g9-shard-00-00.ddywzeb.mongodb.net:27017,ac-nofu3g9-shard-00-01.ddywzeb.mongodb.net:27017,ac-nofu3g9-shard-00-02.ddywzeb.mongodb.net:27017/?ssl=true&replicaSet=atlas-iux5dn-shard-0&authSource=admin&appName=APEX
-
-# Google AI Studio API Key (Starts with AIzaSy...):
-GEMINI_API_KEY=your_gemini_api_key_here
-GOOGLE_CLOUD_PROJECT=gen-lang-client-0430258993
-NODE_ENV=development
-```
-
-> **Note**: Even before entering your MongoDB Atlas password or Gemini key, the application includes a **Resilient Hybrid Fallback Engine** that stores data locally, generates AI heuristic classifications, and runs 100% reliably out of the box during evaluations!
-
----
 
 ## 🌍 B2G Business Model & BRICS Scalability
 
