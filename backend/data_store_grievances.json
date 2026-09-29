@@ -1,0 +1,268 @@
+[
+  {
+    "_id": "g_1790694412973_dqxt6",
+    "ticketId": "JD-2026-8392-9264",
+    "source": "whatsapp",
+    "citizenPhone": "+91 94421 88392",
+    "citizenName": "WhatsApp Citizen User",
+    "originalLanguage": "ta",
+    "rawInputText": "ரோடு ஃபுல்லா பெரிய பள்ளமா இருக்கு, தண்ணி தேங்கி வண்டி போக முடியல",
+    "translatedText": "Major road damage with deep craters and potholes causing frequent vehicle breakdowns and traffic jams.",
+    "category": "Roads & Potholes",
+    "urgency": "High",
+    "sentimentScore": -0.75,
+    "sentimentLabel": "Very Frustrated",
+    "media": {
+      "imageUrl": "",
+      "damageVerified": false,
+      "visionAnalysis": "Text grievance recorded via WhatsApp voice note pipeline",
+      "severityLevel": "Moderate"
+    },
+    "location": {
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "ward": "Ward 45 - South Gate",
+      "pincode": "625001",
+      "coordinates": {
+        "lat": 9.923542707788117,
+        "lng": 78.11719216863088
+      }
+    },
+    "priorityScore": 65,
+    "status": "Fused with Census",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 18500,
+      "estimatedBudgetINR": 650000,
+      "recommendedDepartment": "Urban Local Body Engineering Wing"
+    },
+    "createdAt": "2026-09-29T15:06:52.973Z"
+  },
+  {
+    "_id": "g_1790693184629_yuvfm",
+    "ticketId": "JD-2026-8392-5733",
+    "source": "whatsapp",
+    "citizenPhone": "+91 94421 88392",
+    "citizenName": "WhatsApp Citizen User",
+    "originalLanguage": "ta",
+    "rawInputText": "???? ??????? ????? ?????? ???????, ????? ?????? ????? ??? ??????",
+    "translatedText": "Major road damage with deep craters and potholes causing frequent vehicle breakdowns and traffic jams.",
+    "category": "Roads & Potholes",
+    "urgency": "High",
+    "sentimentScore": -0.75,
+    "sentimentLabel": "Very Frustrated",
+    "media": {
+      "imageUrl": "",
+      "damageVerified": false,
+      "visionAnalysis": "Text grievance recorded via WhatsApp voice note pipeline",
+      "severityLevel": "Moderate"
+    },
+    "location": {
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "ward": "Ward 45 - South Gate",
+      "pincode": "625001",
+      "coordinates": {
+        "lat": 9.913787314071378,
+        "lng": 78.11856287741192
+      }
+    },
+    "priorityScore": 60,
+    "status": "Fused with Census",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 18500,
+      "estimatedBudgetINR": 650000,
+      "recommendedDepartment": "Urban Local Body Engineering Wing"
+    },
+    "createdAt": "2026-09-29T14:46:24.629Z"
+  },
+  {
+    "ticketId": "JD-2026-MDU-4821",
+    "source": "voice_web",
+    "citizenPhone": "+91 98421 11029",
+    "citizenName": "M. Senthilkumar",
+    "originalLanguage": "ta",
+    "rawInputText": "கீழ வாசல் மெயின் ரோடுல பெரிய பள்ளம் இருக்கு தம்பி, ரெண்டு நாளா பைப் உடைஞ்சு தண்ணி வீணாகுது, ஸ்கூல் பசங்க வண்டி விழுந்துட்டாங்க.",
+    "translatedText": "Deep road crater and major broken potable water pipeline near Keela Vaasal main road causing water wastage and school commute accidents.",
+    "category": "Water Supply & Drainage",
+    "urgency": "Critical",
+    "sentimentScore": -0.92,
+    "sentimentLabel": "Very Frustrated",
+    "media": {
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=600&auto=format&fit=crop",
+      "damageVerified": true,
+      "visionAnalysis": "Severe subterranean pipeline burst with crater depth of ~22cm on asphalt carriage-way.",
+      "severityLevel": "Critical"
+    },
+    "location": {
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "ward": "Ward 45 - South Gate",
+      "pincode": "625001",
+      "landmark": "Near Municipal Higher Secondary School",
+      "coordinates": {
+        "lat": 9.9189,
+        "lng": 78.1215
+      }
+    },
+    "priorityScore": 92,
+    "status": "Fused with Census",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 38000,
+      "estimatedBudgetINR": 420000,
+      "recommendedDepartment": "Tamil Nadu Water Supply & Drainage Board"
+    },
+    "createdAt": "2026-09-29T10:42:17.188Z"
+  },
+  {
+    "ticketId": "JD-2026-MDU-1904",
+    "source": "whatsapp",
+    "citizenPhone": "+91 97901 34912",
+    "citizenName": "K. Meenakshi Sundaram",
+    "originalLanguage": "tanglish",
+    "rawInputText": "Simmakkal signal kitta heavy pothole, night-la street lights illama 3 bike slip aaiduchu please fix pannunga.",
+    "translatedText": "Severe cluster of potholes near Simmakkal junction accompanied by dysfunctional streetlights leading to multiple night-time two-wheeler slips.",
+    "category": "Roads & Potholes",
+    "urgency": "High",
+    "sentimentScore": -0.84,
+    "sentimentLabel": "Very Frustrated",
+    "media": {
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop",
+      "damageVerified": true,
+      "visionAnalysis": "Pothole cluster spanning 3.5 meters across arterial intersection.",
+      "severityLevel": "Severe"
+    },
+    "location": {
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "ward": "Ward 28 - Simmakkal",
+      "pincode": "625002",
+      "landmark": "Opposite Old Bus Stand",
+      "coordinates": {
+        "lat": 9.9298,
+        "lng": 78.1189
+      }
+    },
+    "priorityScore": 84,
+    "status": "Budget Proposed",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 52000,
+      "estimatedBudgetINR": 580000,
+      "recommendedDepartment": "Highways & Municipal Works Wing"
+    },
+    "createdAt": "2026-09-29T02:42:17.188Z"
+  },
+  {
+    "ticketId": "JD-2026-CHN-7731",
+    "source": "whatsapp",
+    "citizenPhone": "+91 94440 28190",
+    "citizenName": "R. Balasubramanian",
+    "originalLanguage": "en",
+    "rawInputText": "Velachery 100 feet road storm water drain blocked with construction debris. Even a 10 min drizzle causes ankle-deep water logging.",
+    "translatedText": "Storm water drain blockage from dumped construction debris along 100 Feet Road triggering severe waterlogging on pedestrian corridors.",
+    "category": "Water Supply & Drainage",
+    "urgency": "High",
+    "sentimentScore": -0.71,
+    "sentimentLabel": "Negative",
+    "media": {
+      "imageUrl": "",
+      "damageVerified": true,
+      "visionAnalysis": "Drainage inlet choke confirmed via GIS topographic elevation mapping.",
+      "severityLevel": "Moderate"
+    },
+    "location": {
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "ward": "Ward 178 - Velachery",
+      "pincode": "600042",
+      "landmark": "Near MRTS Station",
+      "coordinates": {
+        "lat": 12.9815,
+        "lng": 80.218
+      }
+    },
+    "priorityScore": 79,
+    "status": "Validated & Geotagged",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 65000,
+      "estimatedBudgetINR": 350000,
+      "recommendedDepartment": "Greater Chennai Corporation (GCC) Storm Water Wing"
+    },
+    "createdAt": "2026-09-28T18:42:17.188Z"
+  },
+  {
+    "ticketId": "JD-2026-VNS-3209",
+    "source": "voice_web",
+    "citizenPhone": "+91 98390 44102",
+    "citizenName": "Ramprasad Tiwari",
+    "originalLanguage": "hi",
+    "rawInputText": "दशाश्वमेध घाट जाने वाले मुख्य रास्ते पर कचरे का ढेर लगा है और ट्रांसफार्मर की खुली तारें लटक रही हैं, तुरंत मरम्मत कराएं।",
+    "translatedText": "Massive solid waste accumulation and exposed electrical transformer wires along main Dashashwamedh access lane endangering pilgrims.",
+    "category": "Sanitation & Waste",
+    "urgency": "Critical",
+    "sentimentScore": -0.94,
+    "sentimentLabel": "Very Frustrated",
+    "media": {
+      "imageUrl": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=600&auto=format&fit=crop",
+      "damageVerified": true,
+      "visionAnalysis": "High-voltage cable sag over municipal waste container in high pedestrian density zone.",
+      "severityLevel": "Critical"
+    },
+    "location": {
+      "state": "Uttar Pradesh",
+      "district": "Varanasi",
+      "ward": "Ward 12 - Dashashwamedh",
+      "pincode": "221001",
+      "landmark": "Near Vishwanath Corridor Entrance 4",
+      "coordinates": {
+        "lat": 25.308,
+        "lng": 83.009
+      }
+    },
+    "priorityScore": 94,
+    "status": "Work Sanctioned",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 85000,
+      "estimatedBudgetINR": 620000,
+      "recommendedDepartment": "Varanasi Nagar Nigam & Purvanchal Vidyut Vitaran"
+    },
+    "createdAt": "2026-09-28T10:42:17.188Z"
+  },
+  {
+    "ticketId": "JD-2026-BLR-8812",
+    "source": "portal",
+    "citizenPhone": "+91 99800 67123",
+    "citizenName": "Ananya Hegde",
+    "originalLanguage": "en",
+    "rawInputText": "Varthur Kodi road pedestrian footpath broken down, open manholes without lids. Extremely dangerous for elderly and children.",
+    "translatedText": "Missing manhole covers and broken pedestrian pavement slabs along Varthur road causing acute fall hazards.",
+    "category": "Roads & Potholes",
+    "urgency": "High",
+    "sentimentScore": -0.78,
+    "sentimentLabel": "Negative",
+    "media": {
+      "imageUrl": "",
+      "damageVerified": true,
+      "visionAnalysis": "Open utility chamber without cautionary signage on busy school transport route.",
+      "severityLevel": "Severe"
+    },
+    "location": {
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "ward": "Ward 85 - Whitefield",
+      "pincode": "560066",
+      "landmark": "Near Varthur Kodi Circle",
+      "coordinates": {
+        "lat": 12.9698,
+        "lng": 77.7499
+      }
+    },
+    "priorityScore": 82,
+    "status": "Budget Proposed",
+    "impactAssessment": {
+      "estimatedBeneficiaries": 41000,
+      "estimatedBudgetINR": 290000,
+      "recommendedDepartment": "BBMP Engineering Wing"
+    },
+    "createdAt": "2026-09-28T02:42:17.188Z"
+  }
+]

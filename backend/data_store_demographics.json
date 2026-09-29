@@ -1,0 +1,190 @@
+[
+  {
+    "district": "Madurai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "bricsNation": "India",
+    "population": 1561000,
+    "densityPerSqKm": 823,
+    "vulnerabilityIndex": 0.72,
+    "existingInfrastructureIndex": 0.44,
+    "activeComplaintsCount": 28,
+    "allocatedBudgetCrINR": 64.5,
+    "coordinates": {
+      "lat": 9.9252,
+      "lng": 78.1198
+    },
+    "wards": [
+      {
+        "wardNumber": "45",
+        "wardName": "South Gate & Keela Vaasal",
+        "population": 64000,
+        "vulnerabilityIndex": 0.81,
+        "infraIndex": 0.38,
+        "topGrievanceCategory": "Water Supply & Drainage"
+      },
+      {
+        "wardNumber": "28",
+        "wardName": "Simmakkal & Goripalayam",
+        "population": 52000,
+        "vulnerabilityIndex": 0.68,
+        "infraIndex": 0.52,
+        "topGrievanceCategory": "Roads & Potholes"
+      },
+      {
+        "wardNumber": "61",
+        "wardName": "Villapuram & Avaniyapuram",
+        "population": 78000,
+        "vulnerabilityIndex": 0.79,
+        "infraIndex": 0.35,
+        "topGrievanceCategory": "Sanitation & Waste"
+      }
+    ]
+  },
+  {
+    "district": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "bricsNation": "India",
+    "population": 7088000,
+    "densityPerSqKm": 26903,
+    "vulnerabilityIndex": 0.65,
+    "existingInfrastructureIndex": 0.68,
+    "activeComplaintsCount": 42,
+    "allocatedBudgetCrINR": 185,
+    "coordinates": {
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "wards": [
+      {
+        "wardNumber": "117",
+        "wardName": "T. Nagar South",
+        "population": 89000,
+        "vulnerabilityIndex": 0.55,
+        "infraIndex": 0.72,
+        "topGrievanceCategory": "Roads & Potholes"
+      },
+      {
+        "wardNumber": "178",
+        "wardName": "Velachery West",
+        "population": 94000,
+        "vulnerabilityIndex": 0.76,
+        "infraIndex": 0.58,
+        "topGrievanceCategory": "Water Supply & Drainage"
+      }
+    ]
+  },
+  {
+    "district": "Varanasi",
+    "state": "Uttar Pradesh",
+    "country": "India",
+    "bricsNation": "India",
+    "population": 1215000,
+    "densityPerSqKm": 2399,
+    "vulnerabilityIndex": 0.78,
+    "existingInfrastructureIndex": 0.41,
+    "activeComplaintsCount": 34,
+    "allocatedBudgetCrINR": 52,
+    "coordinates": {
+      "lat": 25.3176,
+      "lng": 82.9739
+    },
+    "wards": [
+      {
+        "wardNumber": "12",
+        "wardName": "Dashashwamedh Ghat Ward",
+        "population": 48000,
+        "vulnerabilityIndex": 0.82,
+        "infraIndex": 0.4,
+        "topGrievanceCategory": "Sanitation & Waste"
+      },
+      {
+        "wardNumber": "34",
+        "wardName": "Cantt Railway Colony",
+        "population": 56000,
+        "vulnerabilityIndex": 0.62,
+        "infraIndex": 0.55,
+        "topGrievanceCategory": "Roads & Potholes"
+      }
+    ]
+  },
+  {
+    "district": "Bengaluru Urban",
+    "state": "Karnataka",
+    "country": "India",
+    "bricsNation": "India",
+    "population": 9621000,
+    "densityPerSqKm": 4378,
+    "vulnerabilityIndex": 0.58,
+    "existingInfrastructureIndex": 0.62,
+    "activeComplaintsCount": 39,
+    "allocatedBudgetCrINR": 210,
+    "coordinates": {
+      "lat": 12.9716,
+      "lng": 77.5946
+    },
+    "wards": [
+      {
+        "wardNumber": "85",
+        "wardName": "Doddanekkundi / Whitefield",
+        "population": 112000,
+        "vulnerabilityIndex": 0.61,
+        "infraIndex": 0.49,
+        "topGrievanceCategory": "Roads & Potholes"
+      }
+    ]
+  },
+  {
+    "district": "Pune",
+    "state": "Maharashtra",
+    "country": "India",
+    "bricsNation": "India",
+    "population": 3124000,
+    "densityPerSqKm": 9400,
+    "vulnerabilityIndex": 0.52,
+    "existingInfrastructureIndex": 0.64,
+    "activeComplaintsCount": 21,
+    "allocatedBudgetCrINR": 115,
+    "coordinates": {
+      "lat": 18.5204,
+      "lng": 73.8567
+    },
+    "wards": [
+      {
+        "wardNumber": "18",
+        "wardName": "Kothrud Central",
+        "population": 76000,
+        "vulnerabilityIndex": 0.48,
+        "infraIndex": 0.71,
+        "topGrievanceCategory": "Electricity & Streetlights"
+      }
+    ]
+  },
+  {
+    "district": "Johannesburg (Soweto)",
+    "state": "Gauteng",
+    "country": "South Africa",
+    "bricsNation": "South Africa",
+    "population": 1271000,
+    "densityPerSqKm": 6400,
+    "vulnerabilityIndex": 0.84,
+    "existingInfrastructureIndex": 0.39,
+    "activeComplaintsCount": 19,
+    "allocatedBudgetCrINR": 42,
+    "coordinates": {
+      "lat": -26.2485,
+      "lng": 27.854
+    },
+    "wards": [
+      {
+        "wardNumber": "S-14",
+        "wardName": "Orlando East",
+        "population": 58000,
+        "vulnerabilityIndex": 0.86,
+        "infraIndex": 0.34,
+        "topGrievanceCategory": "Water Supply & Drainage"
+      }
+    ]
+  }
+]

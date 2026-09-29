@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-blue: #1a73e8;
+  --primary-blue-hover: #1557b0;
+  --primary-blue-light: #e8f0fe;
+  --primary-blue-glow: rgba(26, 115, 232, 0.25);
+
+  --google-red: #ea4335;
+  --google-red-light: #fce8e6;
+  --google-yellow: #f9ab00;
+  --google-yellow-light: #fef7e0;
+  --google-green: #34a853;
+  --google-green-light: #e6f4ea;
+
+  --bg-main: #f8fafd;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #ffffff;
+  --bg-sidebar: #f1f3f4;
+  --border-light: #e0e3e7;
+  --border-focus: #1a73e8;
+
+  --text-dark: #202124;
+  --text-secondary: #5f6368;
+  --text-muted: #80868b;
+  --text-inverse: #ffffff;
+
+  --shadow-sm: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 25px -5px rgba(26, 115, 232, 0.12), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  --shadow-float: 0 14px 38px rgba(0,0,0,0.12), 0 9px 12px rgba(0,0,0,0.06);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+h1, h2, h3, h4, .brand-title {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  color: var(--text-dark);
+}
+
+/* App Header Google Product Style */
+.google-appbar {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.google-appbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+}
+
+.google-logo-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #f1f3f4;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+/* Navigation Tabs */
+.nav-tab-button {
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.nav-tab-button:hover {
+  background: #f1f3f4;
+  color: var(--text-dark);
+}
+
+.nav-tab-button.active {
+  background: var(--primary-blue-light);
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* Card System */
+.google-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.google-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.google-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Stat KPI Card */
+.kpi-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.kpi-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--card-accent, var(--primary-blue));
+}
+
+.kpi-value {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.kpi-label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--primary-blue);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(26, 115, 232, 0.4);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  background: var(--primary-blue-hover);
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #f1f3f4;
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #e8eaed;
+}
+
+/* Status Chips & Priority Badges */
+.badge-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.badge-critical {
+  background: #fce8e6;
+  color: #c5221f;
+  border: 1px solid rgba(234, 67, 53, 0.3);
+}
+
+.badge-high {
+  background: #feefe3;
+  color: #c26401;
+  border: 1px solid rgba(250, 123, 23, 0.3);
+}
+
+.badge-medium {
+  background: #fef7e0;
+  color: #b06000;
+  border: 1px solid rgba(249, 171, 0, 0.3);
+}
+
+.badge-low {
+  background: #e6f4ea;
+  color: #137333;
+  border: 1px solid rgba(52, 168, 83, 0.3);
+}
+
+/* Audio Waveform Animation */
+@keyframes soundWave {
+  0%, 100% { height: 6px; }
+  50% { height: 28px; }
+}
+
+.audio-bar {
+  width: 4px;
+  background: var(--primary-blue);
+  border-radius: 4px;
+  display: inline-block;
+  animation: soundWave 1.2s infinite ease-in-out;
+}
+
+.audio-bar:nth-child(2) { animation-delay: 0.2s; }
+.audio-bar:nth-child(3) { animation-delay: 0.4s; }
+.audio-bar:nth-child(4) { animation-delay: 0.1s; }
+.audio-bar:nth-child(5) { animation-delay: 0.3s; }
+
+/* WhatsApp Simulator Styles */
+.wa-chat-window {
+  background-color: #efeae2;
+  background-image: radial-gradient(#d1d7db 1px, transparent 1px);
+  background-size: 16px 16px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  box-shadow: var(--shadow-float);
+  border: 1px solid var(--border-light);
+}
+
+.wa-bubble-incoming {
+  background: #ffffff;
+  border-radius: 8px 8px 8px 0;
+  padding: 0.65rem 0.9rem;
+  max-width: 82%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.13);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+.wa-bubble-outgoing {
+  background: #d9fdd3;
+  border-radius: 8px 8px 0 8px;
+  padding: 0.65rem 0.9rem;
+  max-width: 82%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.13);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  align-self: flex-end;
+}
+
+/* Map Containers */
+.leaflet-container {
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-md);
+  z-index: 10;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}
