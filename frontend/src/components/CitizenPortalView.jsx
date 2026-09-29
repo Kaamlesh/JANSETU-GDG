@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { TRANSLATIONS } from '../i18n/translations';
+import { getApiUrl } from '../config/api';
 
 export default function CitizenPortalView({ currentLang }) {
   const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
@@ -132,7 +133,7 @@ export default function CitizenPortalView({ currentLang }) {
 
     setAnalyzing(true);
     try {
-      const res = await fetch('/api/grievances/analyze-preview', {
+      const res = await fetch(getApiUrl('/api/grievances/analyze-preview'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -160,7 +161,7 @@ export default function CitizenPortalView({ currentLang }) {
 
     setSubmitting(true);
     try {
-      const res = await fetch('/api/grievances', {
+      const res = await fetch(getApiUrl('/api/grievances'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

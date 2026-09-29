@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import GisMap from './GisMap';
 import PolicyCopilotDrawer from './PolicyCopilotDrawer';
+import { getApiUrl } from '../config/api';
 
 export default function DashboardView({ currentLang }) {
   const [stats, setStats] = useState(null);
@@ -20,9 +21,9 @@ export default function DashboardView({ currentLang }) {
     try {
       setLoading(true);
       const [resOverview, resHotspots, resGrievances] = await Promise.all([
-        fetch('/api/analytics/overview').then(r => r.json()),
-        fetch('/api/analytics/hotspots').then(r => r.json()),
-        fetch('/api/grievances').then(r => r.json())
+        fetch(getApiUrl('/api/analytics/overview')).then(r => r.json()),
+        fetch(getApiUrl('/api/analytics/hotspots')).then(r => r.json()),
+        fetch(getApiUrl('/api/grievances')).then(r => r.json())
       ]);
 
       if (resOverview.success) setStats(resOverview.stats);
@@ -41,7 +42,7 @@ export default function DashboardView({ currentLang }) {
 
   const handleUpdateStatus = async (ticketId, nextStatus) => {
     try {
-      const res = await fetch(`/api/grievances/${ticketId}/status`, {
+      const res = await fetch(getApiUrl(`/api/grievances/${ticketId}/status`), {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status: nextStatus })

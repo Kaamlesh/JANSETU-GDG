@@ -4,6 +4,7 @@ import DashboardView from './components/DashboardView';
 import CitizenPortalView from './components/CitizenPortalView';
 import WhatsAppSimulatorView from './components/WhatsAppSimulatorView';
 import BlueprintView from './components/BlueprintView';
+import { getApiUrl } from './config/api';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -14,7 +15,7 @@ export default function App() {
   useEffect(() => {
     const checkHealth = async () => {
       try {
-        const res = await fetch('/api/health');
+        const res = await fetch(getApiUrl('/api/health'));
         const data = await res.json();
         if (data.status === 'healthy') {
           setBackendHealthy(true);

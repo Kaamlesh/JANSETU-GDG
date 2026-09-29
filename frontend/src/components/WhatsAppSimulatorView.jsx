@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Mic, Image, CheckCheck, Phone, Video, MoreVertical, Sparkles, Code2 } from 'lucide-react';
+import { getApiUrl } from '../config/api';
 
 export default function WhatsAppSimulatorView() {
   const messagesEndRef = useRef(null);
@@ -40,7 +41,7 @@ How to report:
     setLoading(true);
 
     try {
-      const res = await fetch('/api/whatsapp/simulate', {
+      const res = await fetch(getApiUrl('/api/whatsapp/simulate'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, Send, Bot, FileText, CheckCircle2, TrendingUp, DollarSign, ArrowRight } from 'lucide-react';
+import { getApiUrl } from '../config/api';
 
 export default function PolicyCopilotDrawer({ selectedDistrict = 'Madurai', onDistrictChange }) {
   const [query, setQuery] = useState('Madurai South-la edhuku budget allocate panna 50k people benefit aavanga?');
@@ -19,7 +20,7 @@ export default function PolicyCopilotDrawer({ selectedDistrict = 'Madurai', onDi
 
     setLoading(true);
     try {
-      const res = await fetch('/api/policy-copilot/query', {
+      const res = await fetch(getApiUrl('/api/policy-copilot/query'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
